@@ -1,5 +1,6 @@
 # buid-my-first-restful-api
 ## Example Documents
+```
 {
     "_id" : ObjectId("5c139771d79ac8eac11e754a"),
     "title" : "API",
@@ -19,8 +20,10 @@
     "title" : "DOM",
     "content" : "The Document Object Model is like an API for interacting with our HTML"
 }
+```
 
 ## Server Starting Code
+```
 import bodyParser from "body-parser";
 import express from "express";
 import mongoose from "mongoose";
@@ -35,9 +38,9 @@ mongoose.connect("mongodb://localhost:27017/wikiDB", { useNewUrlParser: true });
 app.listen(3000, function() {
   console.log("Server started on port 3000");
 });
-
+```
 ## Re-populated DB
-
+```
 {
     "_id" : "5c18e1892998bdb3b3d355bf",
     "title" : "REST",
@@ -72,3 +75,4 @@ app.listen(3000, function() {
     "content" : "Jack Bauer once stepped into quicksand. The quicksand couldn't escape and nearly drowned.",
     "__v" : 0
 }
+```
